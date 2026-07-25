@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Vision Production | Vidéo, Photo, Web &amp; Publicité</title>
+<meta name="description" content="Production vidéo, photographie professionnelle, conception de site web et campagnes publicitaires. Vision Production, agence créative basée à Québec.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="siteNav">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <nav aria-label="Navigation principale">
+    <a href="https://vision-production-seven.vercel.app/" class="split-link"><span>Accueil</span><span aria-hidden="true">Accueil</span></a>
+    <a href="https://vision-production-seven.vercel.app/#apropos" class="split-link"><span>À propos</span><span aria-hidden="true">À propos</span></a>
+    <a href="https://vision-production-seven.vercel.app/#projets" class="split-link"><span>Projets</span><span aria-hidden="true">Projets</span></a>
+    <a href="index.html" class="split-link is-current"><span>Services</span><span aria-hidden="true">Services</span></a>
+    <div class="nav-dropdown" data-dropdown>
+      <button type="button" class="split-link nav-dropdown-trigger" data-dropdown-trigger aria-haspopup="true" aria-expanded="false">
+        <span>Portfolio</span><span aria-hidden="true">Portfolio</span>
+      </button>
+      <div class="nav-dropdown-menu" data-dropdown-menu>
+        <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+        <a href="portfolio-web.html">Portfolio Web</a>
+        <a href="portfolio-video.html">Portfolio Vidéo</a>
+      </div>
+    </div>
+  </nav>
+  <a href="#contact" class="split-link nav-contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+  <button class="menu-button" type="button" aria-label="Ouvrir le menu" id="menuButton">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+  </button>
+</header>
+
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button type="button" aria-label="Fermer le menu" id="menuClose">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+  </button>
+  <a href="https://vision-production-seven.vercel.app/" style="--menu-index:1"><small>01</small>Accueil</a>
+  <a href="https://vision-production-seven.vercel.app/#apropos" style="--menu-index:2"><small>02</small>À propos</a>
+  <a href="https://vision-production-seven.vercel.app/#projets" style="--menu-index:3"><small>03</small>Projets</a>
+  <a href="index.html" class="is-current" style="--menu-index:4"><small>04</small>Services</a>
+  <div class="mobile-menu-item" style="--menu-index:5">
+    <div class="mobile-menu-row">
+      <small>05</small><span>Portfolio</span>
+      <button type="button" class="mobile-dropdown-toggle" data-mobile-dropdown-toggle aria-label="Afficher les sous-pages Portfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+      </button>
+    </div>
+    <div class="mobile-dropdown-panel" data-mobile-dropdown-panel>
+      <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+      <a href="portfolio-web.html">Portfolio Web</a>
+      <a href="portfolio-video.html">Portfolio Vidéo</a>
+    </div>
+  </div>
+  <a href="#contact" style="--menu-index:6"><small>06</small>Contact</a>
+</aside>
+
+<main>
+
+  <!-- HERO : fullscreen slider, one slide per service -->
+  <section class="hero-slider" id="top" aria-roledescription="carrousel" aria-label="Nos services">
+
+    <button type="button" class="hero-arrow hero-arrow-prev" data-slider-prev aria-label="Service précédent">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+    </button>
+    <button type="button" class="hero-arrow hero-arrow-next" data-slider-next aria-label="Service suivant">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+
+    <div class="hero-slide is-active" data-slide="0">
+      <div class="hero-slide-media">
+        <img src="../assets/images/hero/hero-01-video.jpg" alt="Tournage vidéo Vision Production" onerror="this.style.opacity=0">
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal" style="--reveal-delay:80ms">Production vidéo</h1>
+          <div class="hero-divider site-reveal" style="--reveal-delay:180ms">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal" style="--reveal-delay:260ms">
+            Capsules réseaux sociaux, vidéos corporatives, contenus immobiliers : un rendu
+            cinématographique qui capte l’attention et met ton expertise en valeur.
+          </p>
+          <a href="#service-01" class="hero-outline-btn site-reveal" style="--reveal-delay:340ms">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="1">
+      <div class="hero-slide-media">
+        <img src="../assets/images/hero/hero-02-photo.jpg" alt="Photographie professionnelle Vision Production" onerror="this.style.opacity=0">
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">Photographie professionnelle</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            Portraits, photos corporatives, produits, immobilier et lifestyle. Des visuels
+            modernes qui renforcent la crédibilité de ta marque.
+          </p>
+          <a href="#service-02" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="2">
+      <div class="hero-slide-media">
+        <img src="../assets/images/hero/hero-03-web.jpg" alt="Conception de site web Vision Production" onerror="this.style.opacity=0">
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">Conception de site web</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            Sites rapides, clairs et pensés pour convertir, puis structurés pour être compris
+            par Google comme par les moteurs génératifs (SEO &amp; GEO inclus).
+          </p>
+          <a href="#service-03" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="3">
+      <div class="hero-slide-media">
+        <img src="../assets/images/hero/hero-04-pub.jpg" alt="Campagnes publicitaires Vision Production" onerror="this.style.opacity=0">
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">Campagnes publicitaires</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            Publicités vidéo percutantes pour Meta Ads, TikTok Ads et Google. Conçues pour
+            accrocher, convaincre et convertir.
+          </p>
+          <a href="#service-04" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="4">
+      <div class="hero-slide-media">
+        <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">SEO &amp; GEO</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            Visible sur Google et dans les réponses des moteurs génératifs comme
+            ChatGPT ou Perplexity — peu importe comment on te cherche.
+          </p>
+          <a href="#service-05" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="5">
+      <div class="hero-slide-media">
+        <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">Automatisation IA</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            On automatise les tâches répétitives — réponses clients, qualification de
+            leads, suivi — pour libérer du temps et accélérer ta croissance.
+          </p>
+          <a href="#service-06" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="6">
+      <div class="hero-slide-media">
+        <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="hero-slide-scrim"></div>
+      <div class="hero-slide-inner">
+        <div class="hero-slide-block">
+          <h1 class="services-hero-title site-reveal">Consulting</h1>
+          <div class="hero-divider site-reveal">
+            <span class="hero-divider-line"></span>
+            <span class="hero-divider-dot"></span>
+          </div>
+          <p class="services-hero-copy site-reveal">
+            Un regard extérieur sur ta présence en ligne. Diagnostic clair et plan
+            d’action concret pour prioriser les bons projets.
+          </p>
+          <a href="#service-07" class="hero-outline-btn site-reveal">
+            Découvrir
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-dots" role="tablist" aria-label="Choisir un service">
+      <button type="button" class="hero-dot is-active" data-slider-dot="0" role="tab" aria-selected="true" aria-label="Production vidéo"></button>
+      <button type="button" class="hero-dot" data-slider-dot="1" role="tab" aria-selected="false" aria-label="Photographie professionnelle"></button>
+      <button type="button" class="hero-dot" data-slider-dot="2" role="tab" aria-selected="false" aria-label="Conception de site web"></button>
+      <button type="button" class="hero-dot" data-slider-dot="3" role="tab" aria-selected="false" aria-label="Campagnes publicitaires"></button>
+      <button type="button" class="hero-dot" data-slider-dot="4" role="tab" aria-selected="false" aria-label="SEO et GEO"></button>
+      <button type="button" class="hero-dot" data-slider-dot="5" role="tab" aria-selected="false" aria-label="Automatisation IA"></button>
+      <button type="button" class="hero-dot" data-slider-dot="6" role="tab" aria-selected="false" aria-label="Consulting"></button>
+    </div>
+  </section>
+
+  <!-- QUICK INDEX (white section, mirrors homepage vp-services list) -->
+  <section class="vp-services" aria-label="Index des services">
+    <h2 class="vp-services-eyebrow site-reveal">NOS SERVICES · 07 EXPERTISES</h2>
+    <h3 class="vp-services-title site-reveal">CE QU’ON FAIT POUR TOI.</h3>
+
+    <div class="service-index">
+      <a href="#service-01" class="vp-service site-reveal" style="--i:1">
+        <span class="service-index-num">01</span>
+        <span class="service-index-tag">PRODUCTION</span>
+        <span class="service-index-title">Production vidéo</span>
+        <span class="service-index-desc">Capsules réseaux sociaux, corporatif, immobilier — un rendu cinématographique.</span>
+        <span class="service-stack" aria-hidden="true">
+          <img src="../assets/images/setup-tournage.jpg" style="--i:1" alt="">
+          <img src="../assets/images/hyrox.jpg" style="--i:2" alt="">
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-02" class="vp-service site-reveal" style="--i:2">
+        <span class="service-index-num">02</span>
+        <span class="service-index-tag">PRODUCTION</span>
+        <span class="service-index-title">Photographie professionnelle</span>
+        <span class="service-index-desc">Portraits, corporatif, produits, immobilier et lifestyle.</span>
+        <span class="service-stack" aria-hidden="true">
+          <img src="../assets/images/coach-prive-gym.jpg" style="--i:1" alt="">
+          <img src="../assets/images/tonic-gym.jpg" style="--i:2" alt="">
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-03" class="vp-service site-reveal" style="--i:3">
+        <span class="service-index-num">03</span>
+        <span class="service-index-tag">DIGITAL</span>
+        <span class="service-index-title">Conception de site web</span>
+        <span class="service-index-desc">Sites rapides, clairs, pensés pour convertir — SEO &amp; GEO inclus.</span>
+        <span class="service-stack" aria-hidden="true">
+          <img src="../assets/images/construction.jpg" style="--i:1" alt="">
+          <img src="../assets/images/bucheron.jpg" style="--i:2" alt="">
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-04" class="vp-service site-reveal" style="--i:4">
+        <span class="service-index-num">04</span>
+        <span class="service-index-tag">PUBLICITÉ</span>
+        <span class="service-index-title">Campagnes publicitaires</span>
+        <span class="service-index-desc">Meta Ads, TikTok Ads et Google — conçues pour convertir.</span>
+        <span class="service-stack" aria-hidden="true">
+          <img src="../assets/images/volks-quebec.jpg" style="--i:1" alt="">
+          <img src="../assets/images/setup-tournage.jpg" style="--i:2" alt="">
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-05" class="vp-service site-reveal" style="--i:5">
+        <span class="service-index-num">05</span>
+        <span class="service-index-tag">DIGITAL</span>
+        <span class="service-index-title">SEO &amp; GEO</span>
+        <span class="service-index-desc">Référencement Google et optimisation pour les moteurs génératifs (ChatGPT, Perplexity).</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-06" class="vp-service site-reveal" style="--i:6">
+        <span class="service-index-num">06</span>
+        <span class="service-index-tag">DIGITAL</span>
+        <span class="service-index-title">Automatisation IA</span>
+        <span class="service-index-desc">Chatbots, qualification de leads et suivi client automatisés.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#service-07" class="vp-service site-reveal" style="--i:7">
+        <span class="service-index-num">07</span>
+        <span class="service-index-tag">STRATÉGIE</span>
+        <span class="service-index-title">Consulting</span>
+        <span class="service-index-desc">Diagnostic, plan d'action et accompagnement pour prioriser les bons projets.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 01 -->
+  <section class="service-detail" id="service-01">
+    <div class="service-detail-media parallax" data-parallax>
+      <img src="../assets/images/setup-tournage.jpg" alt="Équipe Vision Production en tournage">
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">01 / 07</span>
+      <span class="service-detail-tag site-reveal">PRODUCTION</span>
+      <h3 class="site-reveal">PRODUCTION<br>VIDÉO</h3>
+      <p class="site-reveal">
+        Capsules pour réseaux sociaux, vidéos corporatives, contenus immobiliers,
+        événementiel : un rendu cinématographique qui capte l’attention et met
+        ton expertise en valeur, du cadrage au montage final.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Capsules réseaux sociaux (Reels, TikTok, Shorts)</li>
+        <li>Vidéos corporatives &amp; institutionnelles</li>
+        <li>Contenu immobilier &amp; visites</li>
+        <li>Couverture événementielle</li>
+        <li>Montage, étalonnage, sous-titres &amp; musique</li>
+        <li>Livraison multi-format (16:9, 9:16, 1:1)</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">DÉLAI : 2–4 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 02 -->
+  <section class="service-detail reverse" id="service-02">
+    <div class="service-detail-media parallax" data-parallax>
+      <img src="../assets/images/coach-prive-gym.jpg" alt="Séance photo corporative Vision Production">
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">02 / 07</span>
+      <span class="service-detail-tag site-reveal">PRODUCTION</span>
+      <h3 class="site-reveal">PHOTOGRAPHIE<br>PROFESSIONNELLE</h3>
+      <p class="site-reveal">
+        Portraits, photos corporatives, produits, immobilier et lifestyle.
+        Des visuels modernes, cohérents avec ton image de marque, qui renforcent
+        la crédibilité et se déclinent sur tous tes canaux.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Portraits corporatifs &amp; équipe</li>
+        <li>Photographie produit</li>
+        <li>Immobilier &amp; lieux commerciaux</li>
+        <li>Lifestyle &amp; image de marque</li>
+        <li>Retouche &amp; étalonnage couleur</li>
+        <li>Livraison web + haute résolution impression</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">DÉLAI : 1–2 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 03 -->
+  <section class="service-detail" id="service-03">
+    <div class="service-detail-media parallax" data-parallax>
+      <div class="web-visual">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">03 / 07</span>
+      <span class="service-detail-tag site-reveal">DIGITAL</span>
+      <h3 class="site-reveal">CONCEPTION DE<br>SITE WEB</h3>
+      <p class="site-reveal">
+        Sites modernes, rapides et pensés pour convertir. Design professionnel,
+        textes convaincants et structuration pour être compris par Google comme
+        par les moteurs génératifs (SEO &amp; GEO inclus).
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Design sur mesure, mobile-first</li>
+        <li>Textes &amp; structure orientés conversion</li>
+        <li>Performance &amp; vitesse de chargement</li>
+        <li>Référencement SEO &amp; GEO (IA générative)</li>
+        <li>Intégration analytics &amp; suivi</li>
+        <li>Formation à la mise à jour du contenu</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">DÉLAI : 2–4 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 04 -->
+  <section class="service-detail reverse" id="service-04">
+    <div class="service-detail-media parallax" data-parallax>
+      <img src="../assets/images/volks-quebec.jpg" alt="Tournage publicitaire Vision Production">
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">04 / 07</span>
+      <span class="service-detail-tag site-reveal">PUBLICITÉ</span>
+      <h3 class="site-reveal">CAMPAGNES<br>PUBLICITAIRES</h3>
+      <p class="site-reveal">
+        Publicités vidéo percutantes pour Meta Ads, TikTok Ads et Google.
+        Stratégie média, ciblage et déclinaisons créatives conçues pour accrocher,
+        convaincre et convertir — avec un suivi de performance continu.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Stratégie média &amp; ciblage</li>
+        <li>Création de variantes publicitaires</li>
+        <li>Meta Ads, TikTok Ads &amp; Google Ads</li>
+        <li>Tests A/B &amp; optimisation continue</li>
+        <li>Rapports de performance</li>
+        <li>Suivi mensuel disponible</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">DÉLAI : 1–3 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 05 -->
+  <section class="service-detail" id="service-05">
+    <div class="service-detail-media parallax" data-parallax>
+      <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">05 / 07</span>
+      <span class="service-detail-tag site-reveal">DIGITAL</span>
+      <h3 class="site-reveal">SEO<br>&amp; GEO</h3>
+      <p class="site-reveal">
+        Être trouvé ne suffit plus — il faut être compris par Google et recommandé
+        par les moteurs génératifs. On optimise ton contenu pour être visible
+        des deux côtés à la fois.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Audit SEO technique complet</li>
+        <li>Stratégie de mots-clés &amp; contenu</li>
+        <li>Optimisation GEO (ChatGPT, Perplexity, Gemini)</li>
+        <li>Structuration des données (schema.org)</li>
+        <li>Suivi de positionnement mensuel</li>
+        <li>Rapports clairs, sans jargon</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">AUDIT : 1–2 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 06 -->
+  <section class="service-detail reverse" id="service-06">
+    <div class="service-detail-media parallax" data-parallax>
+      <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">06 / 07</span>
+      <span class="service-detail-tag site-reveal">DIGITAL</span>
+      <h3 class="site-reveal">AUTOMATISATION<br>IA</h3>
+      <p class="site-reveal">
+        Chaque tâche répétitive automatisée, c’est du temps pour faire croître
+        ton entreprise. On identifie les bons cas d’usage et on les met en place.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Chatbots &amp; réponses automatisées</li>
+        <li>Qualification de leads automatique</li>
+        <li>Automatisation du suivi client (CRM)</li>
+        <li>Génération de contenu assistée par IA</li>
+        <li>Intégration avec tes outils existants</li>
+        <li>Formation de l’équipe</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">DÉLAI : 2–4 SEMAINES</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED SERVICE 07 -->
+  <section class="service-detail" id="service-07">
+    <div class="service-detail-media parallax" data-parallax>
+      <div class="web-visual"><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="service-detail-copy">
+      <span class="service-detail-num site-reveal">07 / 07</span>
+      <span class="service-detail-tag site-reveal">STRATÉGIE</span>
+      <h3 class="site-reveal">CONSULTING</h3>
+      <p class="site-reveal">
+        Avant d’investir, on clarifie. Diagnostic de ta présence en ligne,
+        priorisation des bons projets et accompagnement stratégique dans la durée.
+      </p>
+      <ul class="service-checklist site-reveal">
+        <li>Audit complet de la présence en ligne</li>
+        <li>Plan d’action priorisé</li>
+        <li>Choix des bons canaux &amp; outils</li>
+        <li>Accompagnement stratégique continu</li>
+        <li>Sessions mensuelles</li>
+        <li>Rapports &amp; recommandations</li>
+      </ul>
+      <div class="service-detail-foot site-reveal">
+        <span class="delay-badge">SUR MESURE</span>
+        <a href="#contact" class="vp-button-motion small">
+          <span>DEMANDER UNE SOUMISSION</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="vp-process">
+    <p class="section-tag site-reveal">NOTRE PROCESSUS · 04 ÉTAPES</p>
+    <h2 class="site-reveal">CLAIR DU PREMIER<br>APPEL À LA LIVRAISON.</h2>
+
+    <div class="process-list">
+      <article class="site-reveal">
+        <b>01</b>
+        <h3>CADRER</h3>
+        <p>Objectifs, audience, offre et direction.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </article>
+      <article class="site-reveal">
+        <b>02</b>
+        <h3>CONCEVOIR</h3>
+        <p>Concept, stratégie et préproduction.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </article>
+      <article class="site-reveal">
+        <b>03</b>
+        <h3>PRODUIRE</h3>
+        <p>Tournage, création, design et développement.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </article>
+      <article class="site-reveal">
+        <b>04</b>
+        <h3>DÉPLOYER</h3>
+        <p>Livraison, mise en ligne et optimisation.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </article>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat site-reveal">
+        <strong data-count="100" data-suffix="+">0</strong>
+        <span>CLIENTS<br>ACCOMPAGNÉS</span>
+      </div>
+      <div class="stat site-reveal">
+        <strong data-count="15" data-suffix="M+">0</strong>
+        <span>DE VUES<br>GÉNÉRÉES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta" id="contact">
+    <div class="spotlight" id="spotlightCta" aria-hidden="true"></div>
+    <p class="section-tag site-reveal">TON PROCHAIN PROJET COMMENCE ICI</p>
+    <h2 class="site-reveal">PRÊT À TE<br><span class="accent">RENDRE VISIBLE?</span></h2>
+    <p class="services-cta-copy site-reveal">
+      Parle-nous de ton projet. On clarifie le besoin, les prochaines étapes
+      et la meilleure façon de faire avancer ta marque.
+    </p>
+    <div class="hero-buttons site-reveal">
+      <a href="mailto:info@visionproduction.ca" class="vp-button-motion">
+        <span>ÉCRIS-NOUS</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="#contact" class="vp-button-motion secondary">
+        <span>PLANIFIER UN PREMIER APPEL</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <p>QUÉBEC · MONTRÉAL · PARTOUT EN LIGNE</p>
+  <p class="copyright">© <span id="year"></span> Vision Production. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

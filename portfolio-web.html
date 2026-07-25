@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Web — Vision Production | Sites qui convertissent</title>
+<meta name="description" content="Sites web conçus et développés par Vision Production : design moderne, performance et SEO pour des marques d'ici.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="siteNav">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <nav aria-label="Navigation principale">
+    <a href="https://vision-production-seven.vercel.app/" class="split-link"><span>Accueil</span><span aria-hidden="true">Accueil</span></a>
+    <a href="https://vision-production-seven.vercel.app/#apropos" class="split-link"><span>À propos</span><span aria-hidden="true">À propos</span></a>
+    <a href="https://vision-production-seven.vercel.app/#projets" class="split-link"><span>Projets</span><span aria-hidden="true">Projets</span></a>
+    <a href="index.html" class="split-link"><span>Services</span><span aria-hidden="true">Services</span></a>
+    <div class="nav-dropdown is-current" data-dropdown>
+      <button type="button" class="split-link nav-dropdown-trigger" data-dropdown-trigger aria-haspopup="true" aria-expanded="false">
+        <span>Portfolio</span><span aria-hidden="true">Portfolio</span>
+      </button>
+      <div class="nav-dropdown-menu" data-dropdown-menu>
+        <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+        <a href="portfolio-web.html" class="is-current">Portfolio Web</a>
+        <a href="portfolio-video.html">Portfolio Vidéo</a>
+      </div>
+    </div>
+  </nav>
+  <a href="#contact" class="split-link nav-contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+  <button class="menu-button" type="button" aria-label="Ouvrir le menu" id="menuButton">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+  </button>
+</header>
+
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button type="button" aria-label="Fermer le menu" id="menuClose">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+  </button>
+  <a href="https://vision-production-seven.vercel.app/" style="--menu-index:1"><small>01</small>Accueil</a>
+  <a href="https://vision-production-seven.vercel.app/#apropos" style="--menu-index:2"><small>02</small>À propos</a>
+  <a href="https://vision-production-seven.vercel.app/#projets" style="--menu-index:3"><small>03</small>Projets</a>
+  <a href="index.html" style="--menu-index:4"><small>04</small>Services</a>
+  <div class="mobile-menu-item" style="--menu-index:5">
+    <div class="mobile-menu-row is-current">
+      <small>05</small><span>Portfolio</span>
+      <button type="button" class="mobile-dropdown-toggle" data-mobile-dropdown-toggle aria-label="Afficher les sous-pages Portfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+      </button>
+    </div>
+    <div class="mobile-dropdown-panel" data-mobile-dropdown-panel>
+      <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+      <a href="portfolio-web.html" class="is-current">Portfolio Web</a>
+      <a href="portfolio-video.html">Portfolio Vidéo</a>
+    </div>
+  </div>
+  <a href="#contact" style="--menu-index:6"><small>06</small>Contact</a>
+</aside>
+
+<main>
+
+  <!-- HEADER -->
+  <section class="portfolio-header">
+    <p class="portfolio-badge site-reveal"><span class="dot"></span>PORTFOLIO WEB</p>
+    <h1 class="site-reveal" style="--reveal-delay:80ms">Des sites <span class="accent">qui convertissent.</span></h1>
+    <p class="site-reveal" style="--reveal-delay:180ms">
+      Design, structure et référencement — chaque site est pensé pour transformer
+      une visite en client. Voici quelques projets récents.
+    </p>
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="project-grid">
+
+    <article class="project-card site-reveal" style="--i:1">
+      <div class="browser-mock">
+        <div class="browser-mock-bar"><span></span><span></span><span></span></div>
+        <div class="browser-mock-media">
+          <img src="../assets/images/construction.jpg" alt="Site web pour une entreprise de construction">
+        </div>
+      </div>
+      <span class="project-card-tag">CONSTRUCTION &amp; ENTREPRENEURS</span>
+      <h3>Un site vitrine pour générer des soumissions</h3>
+      <p>Structure claire, formulaire de demande simplifié et mise en valeur des réalisations pour convertir les visiteurs en clients qualifiés.</p>
+      <div class="project-card-meta">
+        <div><strong>SEO local</strong><span>RÉFÉRENCEMENT</span></div>
+        <div><strong>2–4 sem.</strong><span>LIVRAISON</span></div>
+      </div>
+    </article>
+
+    <article class="project-card site-reveal" style="--i:2">
+      <div class="browser-mock">
+        <div class="browser-mock-bar"><span></span><span></span><span></span></div>
+        <div class="browser-mock-media">
+          <img src="../assets/images/tonic-gym.jpg" alt="Site web pour un centre d'entraînement">
+        </div>
+      </div>
+      <span class="project-card-tag">SANTÉ &amp; CONDITIONNEMENT PHYSIQUE</span>
+      <h3>Réservation de séances directement en ligne</h3>
+      <p>Calendrier intégré, présentation des entraîneurs et témoignages pour rassurer avant l'inscription.</p>
+      <div class="project-card-meta">
+        <div><strong>Mobile-first</strong><span>DESIGN</span></div>
+        <div><strong>2–4 sem.</strong><span>LIVRAISON</span></div>
+      </div>
+    </article>
+
+    <article class="project-card site-reveal" style="--i:3">
+      <div class="browser-mock">
+        <div class="browser-mock-bar"><span></span><span></span><span></span></div>
+        <div class="browser-mock-media">
+          <img src="../assets/images/bucheron.jpg" alt="Site web pour un service extérieur">
+        </div>
+      </div>
+      <span class="project-card-tag">SERVICES EXTÉRIEURS</span>
+      <h3>Des demandes qualifiées, pas juste du trafic</h3>
+      <p>Pages de service distinctes par zone desservie, avis clients mis en évidence et appel à l'action clair sur chaque écran.</p>
+      <div class="project-card-meta">
+        <div><strong>SEO &amp; GEO</strong><span>RÉFÉRENCEMENT</span></div>
+        <div><strong>2–4 sem.</strong><span>LIVRAISON</span></div>
+      </div>
+    </article>
+
+    <article class="project-card site-reveal" style="--i:4">
+      <div class="browser-mock">
+        <div class="browser-mock-bar"><span></span><span></span><span></span></div>
+        <div class="browser-mock-media">
+          <img src="../assets/images/volks-quebec.jpg" alt="Site web pour un concessionnaire automobile">
+        </div>
+      </div>
+      <span class="project-card-tag">CONCESSIONNAIRE AUTOMOBILE</span>
+      <h3>L'inventaire mis en valeur, sans friction</h3>
+      <p>Fiches véhicules détaillées, prise de rendez-vous simplifiée et intégration avec les outils déjà utilisés par l'équipe des ventes.</p>
+      <div class="project-card-meta">
+        <div><strong>Rapide</strong><span>PERFORMANCE</span></div>
+        <div><strong>2–4 sem.</strong><span>LIVRAISON</span></div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="site-reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <strong>100+</strong>
+      <span>CLIENTS ACCOMPAGNÉS</span>
+    </div>
+    <div class="site-reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+      <strong>+15M</strong>
+      <span>VUES GÉNÉRÉES</span>
+    </div>
+    <div class="site-reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"></rect><path d="M12 18h.01"></path></svg>
+      <strong>100%</strong>
+      <span>RESPONSIVE &amp; RAPIDE</span>
+    </div>
+    <div class="site-reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      <strong>SEO</strong>
+      <span>&amp; GEO INCLUS</span>
+    </div>
+  </section>
+
+  <!-- TAGLINE -->
+  <section class="tagline-banner">
+    <p class="site-reveal">DES SITES QUI CONVERTISSENT. PAS SEULEMENT QUI PLAISENT.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta" id="contact">
+    <div class="spotlight" id="spotlightCta" aria-hidden="true"></div>
+    <p class="section-tag site-reveal">TON PROCHAIN PROJET COMMENCE ICI</p>
+    <h2 class="site-reveal">ENVIE D’UN SITE<br><span class="accent">COMME ÇA?</span></h2>
+    <p class="services-cta-copy site-reveal">
+      Parle-nous de ton projet. On clarifie le besoin, les prochaines étapes
+      et la meilleure façon de faire avancer ta marque.
+    </p>
+    <div class="hero-buttons site-reveal">
+      <a href="mailto:info@visionproduction.ca" class="vp-button-motion">
+        <span>ÉCRIS-NOUS</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="index.html" class="vp-button-motion secondary">
+        <span>VOIR NOS SERVICES</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <p>QUÉBEC · MONTRÉAL · PARTOUT EN LIGNE</p>
+  <p class="copyright">© <span id="year"></span> Vision Production. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
