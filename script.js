@@ -229,14 +229,28 @@
   /* ---------- desktop nav dropdown (Portfolio) ---------- */
   document.querySelectorAll('[data-dropdown]').forEach(function (dropdown) {
     var trigger = dropdown.querySelector('[data-dropdown-trigger]');
-    function open() { dropdown.classList.add('is-open'); trigger.setAttribute('aria-expanded', 'true'); }
-    function close() { dropdown.classList.remove('is-open'); trigger.setAttribute('aria-expanded', 'false'); }
+    var closeTimer = null;
+    function open() {
+      window.clearTimeout(closeTimer);
+      dropdown.classList.add('is-open');
+      trigger.setAttribute('aria-expanded', 'true');
+    }
+    function close() {
+      dropdown.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+    function scheduleClose() {
+      window.clearTimeout(closeTimer);
+      // grace period so the cursor can cross the visual gap between the
+      // trigger and the menu below it without the menu closing mid-move
+      closeTimer = window.setTimeout(close, 300);
+    }
     trigger.addEventListener('click', function (e) {
       e.stopPropagation();
       dropdown.classList.contains('is-open') ? close() : open();
     });
     dropdown.addEventListener('mouseenter', open);
-    dropdown.addEventListener('mouseleave', close);
+    dropdown.addEventListener('mouseleave', scheduleClose);
     document.addEventListener('click', function (e) { if (!dropdown.contains(e.target)) close(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
   });
