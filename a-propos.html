@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos | Vision Production, anciennement Visual JF</title>
+<meta name="description" content="Vision Production (anciennement Visual JF) accompagne les entreprises de Québec depuis plusieurs années. Découvre notre histoire, notre mission et notre approche.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist+Mono:wght@400;500&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="siteNav">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <nav aria-label="Navigation principale">
+    <a href="https://vision-production-seven.vercel.app/" class="split-link"><span>Accueil</span><span aria-hidden="true">Accueil</span></a>
+    <a href="a-propos.html" class="split-link is-current"><span>À propos</span><span aria-hidden="true">À propos</span></a>
+    <a href="https://vision-production-seven.vercel.app/#projets" class="split-link"><span>Projets</span><span aria-hidden="true">Projets</span></a>
+    <a href="index.html" class="split-link"><span>Services</span><span aria-hidden="true">Services</span></a>
+    <div class="nav-dropdown" data-dropdown>
+      <button type="button" class="split-link nav-dropdown-trigger" data-dropdown-trigger aria-haspopup="true" aria-expanded="false">
+        <span>Portfolio</span><span aria-hidden="true">Portfolio</span>
+      </button>
+      <div class="nav-dropdown-menu" data-dropdown-menu>
+        <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+        <a href="portfolio-web.html">Portfolio Web</a>
+        <a href="portfolio-video.html">Portfolio Vidéo</a>
+      </div>
+    </div>
+  </nav>
+  <a href="#contact" class="split-link nav-contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+  <button class="menu-button" type="button" aria-label="Ouvrir le menu" id="menuButton">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+  </button>
+</header>
+
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button type="button" aria-label="Fermer le menu" id="menuClose">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+  </button>
+  <a href="https://vision-production-seven.vercel.app/" style="--menu-index:1"><small>01</small>Accueil</a>
+  <a href="a-propos.html" class="is-current" style="--menu-index:2"><small>02</small>À propos</a>
+  <a href="https://vision-production-seven.vercel.app/#projets" style="--menu-index:3"><small>03</small>Projets</a>
+  <a href="index.html" style="--menu-index:4"><small>04</small>Services</a>
+  <div class="mobile-menu-item" style="--menu-index:5">
+    <div class="mobile-menu-row">
+      <small>05</small><span>Portfolio</span>
+      <button type="button" class="mobile-dropdown-toggle" data-mobile-dropdown-toggle aria-label="Afficher les sous-pages Portfolio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+      </button>
+    </div>
+    <div class="mobile-dropdown-panel" data-mobile-dropdown-panel>
+      <a href="https://vision-production-seven.vercel.app/portfolio">Portfolio Photo</a>
+      <a href="portfolio-web.html">Portfolio Web</a>
+      <a href="portfolio-video.html">Portfolio Vidéo</a>
+    </div>
+  </div>
+  <a href="#contact" style="--menu-index:6"><small>06</small>Contact</a>
+</aside>
+
+<main>
+
+  <!-- HEADER -->
+  <section class="portfolio-header">
+    <p class="portfolio-badge site-reveal"><span class="dot"></span>À PROPOS</p>
+    <h1 class="site-reveal" style="--reveal-delay:80ms">De Visual JF à <span class="accent">Vision Production.</span></h1>
+    <p class="site-reveal" style="--reveal-delay:180ms">
+      Vision Production est né d’une évolution simple : nos clients ne nous demandaient plus
+      seulement des vidéos, ils nous demandaient de comprendre l’ensemble de leur visibilité en ligne.
+    </p>
+    <div class="hero-buttons site-reveal" style="justify-content:center; --reveal-delay:260ms">
+      <a href="#contact" class="vp-button-motion">
+        <span>RÉSERVER MA CONSULTATION GRATUITE</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- NOTRE HISTOIRE -->
+  <section class="content-section">
+    <div class="content-section-inner">
+      <p class="section-tag site-reveal">NOTRE HISTOIRE</p>
+      <h2 class="site-reveal">Pourquoi on a changé de nom.</h2>
+      <p class="site-reveal">
+        Visual JF a bâti sa réputation en vidéo et en photo, avec plus de 100 entreprises
+        accompagnées et plus de 15M de vues générées pour nos clients. Mais au fil des projets,
+        une chose est devenue évidente : le site, les publicités, le référencement et la vidéo
+        ne peuvent plus être traités comme des services séparés. Un client qui a une belle vidéo
+        mais un site lent perd quand même des ventes. Un site rapide sans stratégie de contenu
+        reste invisible.
+      </p>
+      <p class="site-reveal">
+        Alors on a élargi notre offre pour vrai, et on a changé de nom pour refléter ce qu’on
+        fait maintenant : Vision Production. Le nom change. L’équipe, la qualité et l’approche
+        stratégique restent les mêmes.
+      </p>
+    </div>
+    <div class="stats-row" style="justify-content:center; margin-top:60px;">
+      <div class="stat site-reveal">
+        <strong data-count="100" data-suffix="+">0</strong>
+        <span>CLIENTS<br>ACCOMPAGNÉS</span>
+      </div>
+      <div class="stat site-reveal">
+        <strong data-count="15" data-suffix="M+">0</strong>
+        <span>DE VUES<br>GÉNÉRÉES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE MISSION -->
+  <section class="content-section on-white">
+    <div class="content-section-inner">
+      <p class="section-tag site-reveal">NOTRE MISSION</p>
+      <h2 class="site-reveal">Rendre ton expertise aussi visible qu’elle le mérite.</h2>
+      <p class="site-reveal">
+        Tu es bon dans ton domaine. Notre travail, c’est de faire en sorte que ça se voie,
+        autant sur Google, sur les réseaux sociaux, que dans les réponses des IA génératives
+        que tes clients potentiels consultent de plus en plus. On ne vend pas des vidéos ou
+        des sites web à la pièce : on construit une présence cohérente, du premier tournage
+        jusqu’au suivi de tes résultats.
+      </p>
+    </div>
+  </section>
+
+  <!-- NOTRE APPROCHE -->
+  <section class="content-section">
+    <div class="content-section-inner">
+      <p class="section-tag site-reveal">NOTRE APPROCHE</p>
+      <h2 class="site-reveal">Une stratégie avant chaque production.</h2>
+      <p class="site-reveal">
+        Avant chaque projet, on prend le temps de comprendre ton message, ton audience et tes
+        objectifs. On ne livre pas des vidéos, un site ou une campagne publicitaire de façon
+        isolée : on construit une direction claire, du script à la diffusion, en passant par
+        le référencement. C’est ce qui distingue une agence d’un simple fournisseur.
+      </p>
+    </div>
+  </section>
+
+  <!-- CE QUI NE CHANGE PAS -->
+  <section class="content-section">
+    <div class="content-section-inner">
+      <p class="section-tag site-reveal">CE QUI NE CHANGE PAS</p>
+      <ul class="service-checklist site-reveal" style="gap:16px; font-size:16px; margin-top:10px;">
+        <li>L’accompagnement humain, du premier appel jusqu’à la livraison finale</li>
+        <li>La qualité cinématographique de nos productions vidéo et photo</li>
+        <li>La transparence sur les délais, les prix et les résultats attendus</li>
+        <li>La flexibilité pour adapter chaque forfait à ta réalité et ton budget</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OÙ ON TRAVAILLE -->
+  <section class="content-section on-white">
+    <div class="content-section-inner">
+      <p class="section-tag site-reveal">OÙ ON TRAVAILLE</p>
+      <h2 class="site-reveal">Basés à Québec, présents partout dans la province.</h2>
+      <p class="site-reveal">
+        Notre équipe est basée à Québec. On accompagne des clients à Québec, à Lévis, sur la
+        Rive-Sud et partout ailleurs dans la province, en personne pour les tournages et
+        séances photo, ou à distance pour le site web, la publicité, le SEO/GEO et le
+        consulting stratégique.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="content-section">
+    <div class="content-section-inner" style="margin-bottom:50px;">
+      <p class="section-tag site-reveal">QUESTIONS FRÉQUENTES</p>
+      <h2 class="site-reveal" style="margin-bottom:0;">Sur notre entreprise.</h2>
+    </div>
+    <div class="faq-list">
+      <article class="faq-item site-reveal">
+        <h3>Vision Production, c’était Visual JF avant ?</h3>
+        <p>Oui. C’est le même studio, la même équipe, avec une offre élargie qui inclut maintenant le site web, la publicité, le SEO/GEO et l’automatisation IA.</p>
+      </article>
+      <article class="faq-item site-reveal">
+        <h3>Est-ce que tes projets en cours avec Visual JF sont affectés par le changement de nom ?</h3>
+        <p>Non. Les projets et ententes en cours se poursuivent normalement, seul le nom et l’offre de services évoluent.</p>
+      </article>
+      <article class="faq-item site-reveal">
+        <h3>Depuis combien de temps l’équipe existe-t-elle ?</h3>
+        <p>L’équipe a bâti sa réputation sous le nom Visual JF avant de devenir Vision Production, avec plus de 100 entreprises accompagnées jusqu’à maintenant.</p>
+      </article>
+      <article class="faq-item site-reveal">
+        <h3>Est-ce qu’on travaille seulement avec de grandes entreprises ?</h3>
+        <p>Non. On travaille avec des entreprises de toutes tailles, des travailleurs autonomes aux entreprises établies, et on adapte chaque forfait en conséquence.</p>
+      </article>
+      <article class="faq-item site-reveal">
+        <h3>Est-ce que tu peux visiter les installations ?</h3>
+        <p>On peut organiser une rencontre en personne à Québec selon ton projet. Discutons-en lors de ta consultation gratuite.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta" id="contact">
+    <div class="spotlight" id="spotlightCta" aria-hidden="true"></div>
+    <p class="section-tag site-reveal">ENVIE D’EN SAVOIR PLUS</p>
+    <h2 class="site-reveal">ENVIE DE VOIR CE QU’ON<br><span class="accent">PEUT CONSTRUIRE ENSEMBLE?</span></h2>
+    <p class="services-cta-copy site-reveal">
+      Parle-nous de ton projet. On clarifie le besoin, les prochaines étapes
+      et la meilleure façon de faire avancer ta marque.
+    </p>
+    <div class="hero-buttons site-reveal">
+      <a href="mailto:info@visionproduction.ca" class="vp-button-motion">
+        <span>ÉCRIS-NOUS</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+      <a href="index.html" class="vp-button-motion secondary">
+        <span>VOIR NOS SERVICES</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="https://vision-production-seven.vercel.app/">Vision®</a>
+  <p>QUÉBEC · MONTRÉAL · PARTOUT EN LIGNE</p>
+  <p class="copyright">© <span id="year"></span> Vision Production. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
