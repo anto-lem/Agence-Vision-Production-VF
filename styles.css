@@ -683,6 +683,50 @@ h1, h2, h3, h4 {
   .service-detail-media { min-height: 280px; }
 }
 
+/* ---------- service switcher (jump between services) ---------- */
+.service-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 6px;
+  padding: 28px var(--pad);
+  background: var(--background);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.service-switcher-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font: 600 12px 'DM Mono', monospace;
+  letter-spacing: 0.04em;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.14);
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+}
+.service-switcher-item:hover {
+  color: var(--foreground);
+  border-color: rgba(255,255,255,0.35);
+}
+.service-switcher-item:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.service-switcher-num { color: var(--red); }
+.service-switcher-item.is-current {
+  color: var(--background);
+  background: var(--red);
+  border-color: var(--red);
+  pointer-events: none;
+}
+.service-switcher-item.is-current .service-switcher-num { color: var(--background); }
+
+@media (max-width: 640px) {
+  .service-switcher { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+  .service-switcher-item { flex: 0 0 auto; }
+}
+
 /* ---------- process ---------- */
 .vp-process {
   padding: 130px var(--pad);
